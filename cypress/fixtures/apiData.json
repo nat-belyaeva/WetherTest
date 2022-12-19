@@ -1,0 +1,57 @@
+{
+  "firstname": "Jim",
+  "lastname": "Brown",
+  "totalprice": 111,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2018-01-01",
+    "checkout": "2019-01-01"
+  },
+  "additionalneeds": "Breakfast",
+  "statusOk": 200,
+  "typeBoolean": "boolean",
+  "arrOfHeadersKeys": [
+    "server",
+    "connection",
+    "x-powered-by",
+    "content-type",
+    "content-length",
+    "etag",
+    "date",
+    "via"
+  ],
+  "admin": {
+    "username": "admin",
+    "password": "password123"
+  },
+  "createBookingInfo": {
+    "firstname": "Ivan",
+    "lastname": "Motors",
+    "totalprice": 200,
+    "bookingdates": {
+      "checkin": "2020-03-15",
+      "checkout": "2021-03-15"
+    },
+    "additionalneeds": "Parking",
+    "depositpaid": false
+  },
+  "updateBookingInfo": {
+    "firstname": "Ivanna",
+    "lastname": "Motors",
+    "totalprice": 200,
+    "bookingdates": {
+      "checkin": "2020-03-15",
+      "checkout": "2022-12-12"
+    },
+    "additionalneeds": "Parking and Breakfast",
+    "depositpaid": false
+  },
+  "newInformation": {
+    "lastname": "SAM",
+    "totalprice": 890
+  },
+  "headersContentType": {
+    "Content-Type": "application/json"
+  }
+
+}
