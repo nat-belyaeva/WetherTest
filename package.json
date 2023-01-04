@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx cypress open --e2e '/cypress/e2e/*.js' --browser chrome"
+     "start": "npx cypress open --e2e '/cypress/e2e/*.js' --browser chrome"
   },
   "author": "",
   "license": "ISC",
