@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "start": "npx cypress open --e2e '/cypress/e2e/*.js' --browser chrome"
+     "start": "npx cypress open --e2e '/cypress/e2e/*.js' --browser chrome",
+    "testsAPI": "npx cypress run --headless --spec './cypress/e2e/API/*.js' --browser chrome",
+    "testsE2E": "npx cypress run --headless --spec './cypress/e2e/UI/*.js' --browser chrome"
   },
   "author": "",
   "license": "ISC",

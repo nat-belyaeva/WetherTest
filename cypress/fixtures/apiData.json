@@ -1,60 +1,80 @@
 {
-"dataForbooking": {
-  "firstname": "Jim",
-  "lastname": "Brown",
-  "totalprice": 111,
-  "depositpaid": true,
-  "bookingdates": {
-   "checkin": "2018-01-01",
-   "checkout": "2019-01-01"
-   },
-  "additionalneeds": "Breakfast"
-},
-
-  "statusOk": 200,
-  "typeBoolean": "boolean",
-  "arrOfHeadersKeys": [
-    "server",
-    "connection",
-    "x-powered-by",
-    "content-type",
-    "content-length",
-    "etag",
-    "date",
-    "via"
-  ],
   "admin": {
     "username": "admin",
     "password": "password123"
   },
-  "createBookingInfo": {
-    "firstname": "Ivan",
-    "lastname": "Motors",
-    "totalprice": 200,
+  "created": {
+    "firstname": "Nat",
+    "lastname": "Bel",
+    "totalprice": 700,
+    "depositpaid": true,
     "bookingdates": {
-      "checkin": "2020-03-15",
-      "checkout": "2021-03-15"
+      "checkin": "2022-12-31",
+      "checkout": "2023-01-01"
     },
-    "additionalneeds": "Parking",
-    "depositpaid": false
+    "additionalneeds": "Offer"
   },
-  "updateBookingInfo": {
-    "firstname": "Ivanna",
-    "lastname": "Motors",
-    "totalprice": 200,
+  "createdCorrectDataReponseTypes": {
+    "bookingid": "number",
+    "booking": "object"
+  },
+  "correctBookingItems": {
+    "firstname": "string",
+    "lastname": "string",
+    "totalprice": "number",
+    "depositpaid": "boolean",
+    "bookingdates": "object",
+    "additionalneeds": "string"
+  },
+  "correctBookingdatesItems": {
+    "checkin": "date",
+    "checkout": "date"
+  },
+  "correctDataReponseProperties": {
+    "obj": [
+      "bookingid",
+      "booking"
+    ],
+    "booking": [
+      "firstname",
+      "lastname",
+      "totalprice",
+      "depositpaid",
+      "bookingdates",
+      "additionalneeds"
+    ],
+    "bookingdates": [
+      "checkin",
+      "checkout"
+    ]
+  },
+  "getBookingHeaders": {
+    "properties": [
+      "server",
+      "connection",
+      "x-powered-by",
+      "content-type",
+      "content-length",
+      "etag",
+      "date",
+      "via"
+    ],
+    "content-type": {
+      "content-type": "application/json; charset=utf-8"
+    }
+  },
+  "updateDataPatch": {
+    "additionalneeds": "get Coffe"
+  },
+  "updateDataPut": {
+    "firstname": "Nat",
+    "lastname": "Bel",
+    "totalprice": 900,
+    "depositpaid": true,
     "bookingdates": {
-      "checkin": "2020-03-15",
-      "checkout": "2022-12-12"
+      "checkin": "2023-10-31",
+      "checkout": "2023-11-20"
     },
-    "additionalneeds": "Parking and Breakfast",
-    "depositpaid": false
-  },
-  "newInformation": {
-    "lastname": "SAM",
-    "totalprice": 890
-  },
-  "headersContentType": {
-    "Content-Type": "application/json"
+    "additionalneeds":"Coffee"
   }
-
 }

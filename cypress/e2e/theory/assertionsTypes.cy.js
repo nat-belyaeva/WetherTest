@@ -90,9 +90,6 @@
                      expect($response).to.include.text('Impressive');
                      expect($response).to.not.include.text('Yes');
                  });
-
-
-
          })
  })
 

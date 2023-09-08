@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-Cypress.on('uncaught:exception', () => false)
+//Cypress.on('uncaught:exception', () => false)
 
 Cypress.on('window:before:load', function (win) {
     const original = win.EventTarget.prototype.addEventListener

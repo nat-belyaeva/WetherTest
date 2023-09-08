@@ -56,13 +56,15 @@ describe('mainPageSpec', () => {
         mainPage.elements.getForecastDays().should('have.length', this.data.forecastDaysLength);
     });
 
-    it('Main page > Section with search > Search City >  Dropdown menu with relevant options appears after clicking the Search button,', function () {
+    it.only('Main page > Section with search > Search City >  Dropdown menu with relevant options appears after clicking the Search button,', function () {
         mainPage.setSearchInputText(this.data.searchInputText.cityName);
         mainPage.clickSearchBtn();
         mainPage.elements
                 .getSearchResultsDropdown()
                 .should('exist')
-                .each($el => {
+                .each(($el, index) => {
+                    cy.log("Index: " + index + " : " + $el.text())
+                    console.log("Index: " + index + " : " + $el.text())
                     cy.wrap($el).should('contain', this.data.searchInputText.cityName)
                 })
      });
