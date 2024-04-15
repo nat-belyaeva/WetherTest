@@ -10,12 +10,12 @@ describe('Fixing error generating from Application not from Cypress code', funct
     it('Fixing App error', ()=> {
         cy.visit('https://chercher.tech/practice/popups#')
     })
-});
+})
 
 describe("Cypress Exception Handling", () => {
     it("Fail on status code", () => {
-        cy.visit("https://ecommerce-playground.lambdatest.io/index.php?route=account/login/1", { failOnStatusCode: false } );
-    });
+        cy.visit("https://ecommerce-playground.lambdatest.io/index.php?route=account/login/1", { failOnStatusCode: false } )
+    })
 })
 describe("Cypress Exception Handling", () => {
     it("Fail on status code by calling api", () => {
